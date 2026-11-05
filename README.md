@@ -2,6 +2,8 @@
 
 一个在浏览器中使用的电气电路拖拽工作台。将元件放到画布上、连接导线，并通过演示模式观察基础开关和负载的状态。
 
+专门为使用 macOS、无法运行学校指定软件的大学生制作。
+
 ## 在线使用
 
 [打开电路工作台](https://qianfanting.github.io/qian-guagua-circuit-workbench/)
