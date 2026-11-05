@@ -164,4 +164,7 @@ $('open').onclick=()=>$('file').click();$('file').onchange=async e=>{const f=e.t
 render();
 })();
 </script>
-</body></html>
+<script>
+const bridge=document.createElement('button');bridge.textContent='在 3D 工作台打开';document.querySelector('.actions').append(bridge);
+bridge.onclick=()=>{const NativeBlob=window.Blob;let payload='';window.Blob=function(parts,options){payload=String(parts[0]||'');return new NativeBlob(parts,options)};try{document.getElementById('save').click()}finally{window.Blob=NativeBlob}if(payload){window.open('https://qianfanting.github.io/qian-guagua-3d-circuit-workbench/#project='+encodeURIComponent(payload),'_blank')}};
+</script></body></html>
